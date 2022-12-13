@@ -1,0 +1,6 @@
+*.retry
+venv/
+roles/
+*.kate-swp
+fetched
+__pycache__

@@ -1,0 +1,14 @@
+---
+- hosts: servers
+  gather_facts: no
+  remote_user: root
+  tasks:
+    - name: set ansible port to 2
+      set_fact:
+        ansible_port: 2
+    - name: now gather facts on port 2
+      setup:
+    - name: Bootstrap it
+      include_role:
+        name: bootstrap
+...
